@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as *;
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  gap: map-get($spacings, "md");
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: map-get($spacings, "md");
+}

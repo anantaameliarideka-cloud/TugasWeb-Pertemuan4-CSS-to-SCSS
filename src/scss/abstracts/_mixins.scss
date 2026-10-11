@@ -1,0 +1,39 @@
+@use "variables" as *;
+
+// 1. Mixin flexbox
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+// 2. Mixin kartu putih
+@mixin card($bg: white, $padding: map-get($spacings, "md")) {
+  background-color: $bg;
+  padding: $padding;
+  border-radius: $border-radius;
+}
+
+// 3. Mixin tombol
+@mixin button-style($bg: $color-secondary, $color: white) {
+  background-color: $bg;
+  color: $color;
+  border: none;
+  padding: 10px;
+  border-radius: $border-radius-sm;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+// 4. Mixin media query dark mode
+@mixin respond-dark {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}

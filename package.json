@@ -1,0 +1,12 @@
+{
+  "name": "tugas4-css-ke-scss",
+  "version": "1.0.0",
+  "description": "Konversi CSS ke SCSS dengan struktur 7-1 pattern",
+  "scripts": {
+    "sass:build": "sass src/scss/main.scss dist/css/main.css --style=expanded",
+    "sass:watch": "sass src/scss/main.scss dist/css/main.css --watch --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

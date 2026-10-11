@@ -1,0 +1,390 @@
+/* RESET & CSS VARIABLES */
+:root {
+    --bg-page: #0f172a;           /* Deep Slate Background */
+    --bg-surface: #1e293b;        /* Surface Card Background */
+    --bg-surface-hover: #334155;  /* Card Hover */
+    --border-color: #334155;      /* Dark Border */
+    --text-heading: #f8fafc;      /* White Text */
+    --text-body: #cbd5e1;         /* Readable Soft Grey */
+    --text-muted: #94a3b8;        /* Muted Text */
+    --accent-blue: #38bdf8;       /* Sky Blue Accent */
+    --badge-bg: #1e3a8a;          /* Navy Badge */
+    --badge-text: #93c5fd;
+    --radius-main: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-body);
+    line-height: 1.6;
+    font-size: 1rem; /* Ukuran dasar paragraf utama (16px) */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* LAYOUT CONTAINER FULL WIDTH */
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 40px;
+}
+
+/* HEADER NAV */
+.site-header {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem; /* Diperbesar */
+    color: var(--text-heading);
+    letter-spacing: -0.02em;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 1rem; /* Diperbesar */
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text-heading);
+}
+
+.nav-links .nav-cta {
+    background: var(--text-heading);
+    color: var(--bg-page);
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.nav-links .nav-cta:hover {
+    background: #e2e8f0;
+}
+
+/* HERO SECTION FULL WIDTH */
+.hero-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    background: var(--bg-surface);
+    padding: 36px 40px;
+    border-radius: var(--radius-main);
+    border: 1px solid var(--border-color);
+    margin: 20px 0 32px 0;
+}
+
+.hero-photo img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.badge {
+    display: inline-block;
+    background: var(--badge-bg);
+    color: var(--badge-text);
+    font-size: 0.9rem; /* Diperbesar */
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(147, 197, 253, 0.2);
+}
+
+.hero-text h1 {
+    font-size: 2.25rem; /* Diperbesar signifikan (Nama Utama) */
+    color: var(--text-heading);
+    line-height: 1.25;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.bio-lead {
+    font-size: 1.1rem; /* Diperbesar */
+    color: var(--text-body);
+    margin-bottom: 16px;
+}
+
+.quote {
+    font-style: italic;
+    color: var(--text-muted);
+    border-left: 3px solid var(--accent-blue);
+    padding-left: 12px;
+    font-size: 1rem; /* Diperbesar */
+}
+
+/* MAIN GRID LAYOUT FULL WIDTH */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.section-block {
+    margin-bottom: 32px;
+}
+
+.section-block h2 {
+    font-size: 1.4rem; /* Diperbesar (Judul Seksi) */
+    color: var(--text-heading);
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+/* PROJECT CARDS */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-card {
+    background: var(--bg-surface);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.project-card:hover {
+    border-color: #475569;
+    background: var(--bg-surface-hover);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.project-header h3 {
+    font-size: 1.15rem; /* Diperbesar */
+    color: var(--text-heading);
+}
+
+.project-header time {
+    font-size: 0.88rem; /* Diperbesar */
+    color: var(--accent-blue);
+    font-weight: 500;
+}
+
+.project-card p {
+    font-size: 1rem; /* Diperbesar */
+    color: var(--text-muted);
+}
+
+/* SIDEBAR & TIMELINE (RIWAYAT PENDIDIKAN) */
+.side-card {
+    background: var(--bg-surface);
+    padding: 24px;
+    border-radius: var(--radius-main);
+    border: 1px solid var(--border-color);
+}
+
+.side-card h2 {
+    font-size: 1.4rem; /* Membesarkan Judul Riwayat Pendidikan */
+    color: var(--text-heading);
+    margin-bottom: 16px;
+}
+
+.timeline {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.timeline li {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 12px;
+}
+
+.timeline li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.timeline strong {
+    font-size: 1.05rem; /* Membesarkan Nama Sekolah */
+    color: var(--text-heading);
+}
+
+.timeline span {
+    font-size: 0.9rem; /* Membesarkan Tahun Sekolah */
+    color: var(--text-muted);
+}
+
+.timeline small {
+    font-size: 0.9rem; /* Membesarkan Keterangan Jurusan */
+    color: var(--accent-blue);
+    margin-top: 2px;
+}
+
+/* TAGS */
+.tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #334155;
+    color: var(--text-heading);
+    font-size: 0.9rem; /* Diperbesar */
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+/* CONTACT SECTION FULL WIDTH */
+.contact-section {
+    width: 100%;
+    background: var(--bg-surface);
+    padding: 32px 40px;
+    border-radius: var(--radius-main);
+    border: 1px solid var(--border-color);
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+    font-size: 1rem; /* Diperbesar */
+    color: var(--text-body);
+}
+
+.contact-section a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-field label {
+    font-size: 0.95rem; /* Diperbesar */
+    font-weight: 500;
+    color: var(--text-heading);
+}
+
+.form-field input, 
+.form-field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem; /* Diperbesar */
+    background: #0f172a;
+    color: var(--text-heading);
+    transition: all 0.15s ease;
+}
+
+.form-field input:focus, 
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+.btn-primary {
+    align-self: flex-start;
+    background: var(--text-heading);
+    color: var(--bg-page);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem; /* Diperbesar */
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.btn-primary:hover {
+    background: #e2e8f0;
+}
+
+/* FOOTER */
+.site-footer {
+    text-align: center;
+    padding: 32px 0;
+    color: var(--text-muted);
+    font-size: 0.9rem; /* Diperbesar */
+}
+
+/* RESPONSIVE DESIGN (HP & TABLET) */
+@media (max-width: 768px) {
+    .container, .site-header, .hero-section, .contact-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-photo img {
+        width: 150px;
+        height: 185px;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .site-header {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

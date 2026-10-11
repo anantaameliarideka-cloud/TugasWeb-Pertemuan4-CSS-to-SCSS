@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+
+@each $name, $value in $spacings {
+  .m-#{$name} {
+    margin: $value;
+  }
+
+  .p-#{$name} {
+    padding: $value;
+  }
+}

@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as *;
+
+footer {
+  text-align: center;
+  padding: map-get($spacings, "md");
+  color: #777;
+}

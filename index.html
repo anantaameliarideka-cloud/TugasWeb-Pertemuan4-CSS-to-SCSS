@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelia Rideka Ananta Tampubolon - Portofolio</title>
+    <meta name="description" content="Portofolio Amelia Rideka Ananta Tampubolon, Mahasiswa Ilmu Komputer Universitas Negeri Medan.">
+    <!-- Font Google: Inter (Sangat bersih & legibel) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="logo">Amelia Tampubolon</div>
+        <nav class="nav-links">
+            <a href="#tentang">Tentang</a>
+            <a href="#pendidikan">Pendidikan</a>
+            <a href="#proyek">Proyek</a>
+            <a href="#kontak" class="nav-cta">Kontak</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Hero Section: Foto di Kiri, Info di Kanan -->
+        <section class="hero-section" id="tentang">
+            <div class="hero-photo">
+                <img src="fotoku.jpeg" alt="Foto Amelia Rideka Ananta Tampubolon">
+            </div>
+            <div class="hero-text">
+                <span class="badge">Backend & Database Enthusiast</span>
+                <h1>Amelia Rideka Ananta Tampubolon</h1>
+                <p class="bio-lead">
+                    Mahasiswa Ilmu Komputer di Universitas Negeri Medan. Berfokus pada pengembangan backend server-side dan pengelolaan arsitektur database.
+                </p>
+                <blockquote class="quote">
+                    “Everything you lose, is a step you take”
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Main Content Layout (2 Kolom) -->
+        <div class="grid-layout">
+
+            <!-- Kolom Kiri: Detail Tentang Saya & Skills -->
+            <div class="main-column">
+                <section class="section-block">
+                    <h2>Tentang Saya</h2>
+                    <p>
+                        Halo! Saya Amelia, seorang mahasiswi yang sedang menempuh pendidikan di Universitas Negeri Medan. Saya memiliki ketertarikan tinggi pada software engineering, khususnya dalam merancang database yang efisien serta membangun sistem backend yang stabil.
+                    </p>
+                </section>
+
+                <section id="proyek" class="section-block">
+                    <h2>Proyek</h2>
+                    <div class="project-list">
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3>Study Focus</h3>
+                                <time>Des 2025</time>
+                            </div>
+                            <p>Platform berbasis web yang dirancang untuk membantu mahasiswa mengelola dan meningkatkan fokus saat belajar.</p>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3>Raze Analyzer</h3>
+                                <time>Apr 2026</time>
+                            </div>
+                            <p>Website analisis data sirkuit balap untuk pemantauan parameter statistik dan kelancaran kompetisi.</p>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3>Pengingat Obat (GEMASTIK 2026)</h3>
+                                <time>Agu 2026</time>
+                            </div>
+                            <p>Aplikasi jadwal & pengingat konsumsi obat harian yang dikembangkan bersama tim untuk kompetisi GEMASTIK.</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Kolom Kanan: Pendidikan & Hobi -->
+            <aside class="sidebar-column">
+                <section id="pendidikan" class="section-block side-card">
+                    <h2>Riwayat Pendidikan</h2>
+                    <ul class="timeline">
+                        <li>
+                            <strong>Universitas Negeri Medan</strong>
+                            <span>2025 — Sekarang</span>
+                            <small>S1 Ilmu Komputer</small>
+                        </li>
+                        <li>
+                            <strong>SMA Negeri 14 Medan</strong>
+                            <span>2021 — 2024</span>
+                        </li>
+                        <li>
+                            <strong>SMP Negeri 15 Medan</strong>
+                            <span>2018 — 2021</span>
+                        </li>
+                        <li>
+                            <strong>SD S ST Antonius V Medan</strong>
+                            <span>2012 — 2018</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section-block side-card">
+                    <h2>Minat & Hobi</h2>
+                    <div class="tag-group">
+                        <span class="tag">Bernyanyi</span>
+                        <span class="tag">Menari</span>
+                        <span class="tag">Database Design</span>
+                    </div>
+                </section>
+            </aside>
+
+        </div>
+
+        <!-- Section Kontak -->
+        <section id="kontak" class="section-block contact-section">
+            <h2>Hubungi Saya</h2>
+            <p>Tertarik untuk berkolaborasi atau diskusi? Silakan kirim pesan melalui formulir di bawah ini atau email langsung ke <a href="mailto:anantaameliarideka@gmail.com">anantaameliarideka@gmail.com</a>.</p>
+            
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan kamu..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Kirim Pesan</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Amelia Rideka Ananta Tampubolon. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

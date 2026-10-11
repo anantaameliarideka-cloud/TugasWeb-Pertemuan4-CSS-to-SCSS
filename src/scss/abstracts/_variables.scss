@@ -1,0 +1,21 @@
+// Colors
+$color-primary: #3e4988;
+$color-secondary: #3e4988;
+$color-bg: #1f0a46;
+$color-text: #240f0f;
+
+$color-bg-dark: #1a1a1a;
+$color-text-dark: #f0f0f0;
+$color-card-dark: #2a2a2a;
+
+// Spacing scale (dipakai loop @each di base/_utilities.scss)
+$spacings: (
+  "sm": 8px,
+  "md": 16px,
+  "lg": 24px
+);
+
+// Layout
+$max-width: 900px;
+$border-radius: 8px;
+$border-radius-sm: 4px;
